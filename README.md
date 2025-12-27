@@ -1,16 +1,65 @@
-# React + Vite
+# 🛍️ WAGMI-STORE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, modern **ecommerce frontend** built with **React + Vite**, styled using **Tailwind CSS**, animated with **GSAP**, and using **Web3Forms** as a **temporary email-based order handler**.
 
-Currently, two official plugins are available:
+This project is designed as a **frontend-first MVP**, ready to be connected to a real backend later.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ React + Vite (fast development & builds)
+- 🎨 Tailwind CSS (responsive, mobile-first UI)
+- 🎬 GSAP animations (hero, navbar, interactions)
+- 🛒 Product listing & product detail pages
+- 🎨 Product variants (size, color)
+- 🔢 Quantity selection
+- 📦 Checkout flow
+- 📧 Order submission via **Web3Forms** (temporary)
+- 🚚 Payment on delivery (COD)
+- 📱 Fully responsive (mobile & desktop)
+- 🚀 Deployment-ready (GitHub + Vercel)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧱 Tech Stack
+
+| Layer | Technology |
+|-----|-----------|
+| Framework | React (Vite) |
+| Styling | Tailwind CSS |
+| Animations | GSAP |
+| Icons | Lucide React |
+| Routing | React Router (pages only) |
+| Order Handling | Web3Forms (temporary) |
+| Deployment | Vercel |
+
+---
+
+## 📂 Project Structure
+
+```txt
+src/
+│
+├── assets/            # Images, logo, product images
+├── components/        # Reusable UI components
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── ProductCard.jsx
+│   ├── VariantSelector.jsx
+│   ├── Socials.jsx
+│
+├── pages/             # App pages
+│   ├── Home.jsx
+│   ├── Product.jsx
+│   ├── Checkout.jsx
+│   ├── About.jsx
+│   ├── Success.jsx
+│
+├── data/
+│   └── products.js    # Static product data (temporary)
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
